@@ -6,7 +6,7 @@ function sum(n){
     }
     return sum;
 }
-console.log(sum(4))
+console.log(sum(4)) // ---------1+2+3+4 = 10
 
 //sum of digits in number
 
@@ -18,4 +18,4 @@ function sumOfDigits(num){
     }
     return sum
 }
-console.log(sumOfDigits(1876))
+console.log(sumOfDigits(1876)) //---------1+8+7+6 = 22
