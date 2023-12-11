@@ -7,3 +7,15 @@ function sum(n){
     return sum;
 }
 console.log(sum(4))
+
+//sum of digits in number
+
+function sumOfDigits(num){
+    let sum = 0;
+    while(num > 0){
+        sum += num%10;
+        num = Math.floor(num/10)
+    }
+    return sum
+}
+console.log(sumOfDigits(1876))
