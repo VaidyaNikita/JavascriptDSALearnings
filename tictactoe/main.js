@@ -3,7 +3,8 @@ let resetBtn = document.querySelector("#resetBtn");
 // let newGameBtn = document.querySelector('#newBtn');
 let msgContainer = document.querySelector('.msg-container');
 let msg = document.querySelector('#msg');
-
+let count = boxes.length;
+console.log(count)
 
 let turnO = true;
 
@@ -82,20 +83,21 @@ const checkWinner = () =>{
 
       if(pos1Val != '' && pos2Val != '' & pos3Val!= ''){
         if(pos1Val === pos2Val && pos2Val === pos3Val){
-            // console.log('winner ' + pos1Val)
-            
-            showWinner(pos1Val);
-            // resetGame();
-            setTimeout(function(){
-                enabledBoxes();
-                msgContainer.classList.add('hide')
-            }, 3000)
+          showWinner(pos1Val);
+          setTimeout(function(){
+            enabledBoxes();
+            msgContainer.classList.add('hide')
+          }, 3000)
         }
+      else {
+        
+      }
       }
     }
-}
-
-
-
+  }
+      
 resetBtn.addEventListener("click", resetGame)
 // newGameBtn.addEventListener("click", resetGame)
+
+
+  
