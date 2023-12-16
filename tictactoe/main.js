@@ -89,9 +89,7 @@ const checkWinner = () =>{
             msgContainer.classList.add('hide')
           }, 3000)
         }
-      else {
-        
-      }
+     
       }
     }
   }
