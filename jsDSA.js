@@ -56,8 +56,8 @@ let arr = [1,2,3,4]
 console.log(duplicate(arr))
 
 
-//given an array of numbers and a target is su of two array element, 
-//create a funtion that will return index postion of sum og taget elements
+//given an array of numbers and a target is sum of two array element, 
+//create a funtion that will return index postion of sum of taget elements
 //ex- 4+5 = 9 => return [1,2] 
 
 let numbers = [3,4,5,6]
