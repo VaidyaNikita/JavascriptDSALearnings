@@ -94,4 +94,24 @@ const revNum = (nums) =>{
     let rev = Number(numsArray.split('').reverse().join(''))
     return(rev)
 }
-console.log(revNum(4567))
+console.log(revNum(4567));
+
+
+// 8 => write a function that checks passed string is palimdrome or not
+
+const checkStrPalim = (str) =>{
+  let revStr = str.split('').reverse().join('');
+  if(str === revStr){
+    console.log(`${str} is a palimdrom`)
+  }else{
+    console.log(`${str} is not a palimdrom`)
+  }
+}
+checkStrPalim('121');
+
+//9 => write a function that returns a string in alphaba\etical order
+
+const stringAlphabate = (str) =>{
+  return str.split('').sort();
+}
+console.log(stringAlphabate("nikita"))
